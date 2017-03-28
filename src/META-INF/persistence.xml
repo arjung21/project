@@ -14,7 +14,6 @@
 		<class>entity.AccountJoined</class>
 		<class>entity.SavingsJoined</class>
 		<class>entity.CurrentJoined</class>
-		
 		<class>entity.EmployeeNO</class>
 		
 		

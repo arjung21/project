@@ -8,6 +8,7 @@ import javax.persistence.*;
  *
  */
 // This is  my second commit.
+// another commit - see differnece.
 @Entity
 @Table (name = "ACCOUNT") 
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
@@ -50,4 +51,5 @@ public class Account implements Serializable {
 		//super();
 	}
    
+  
 }
