@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.5" xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eclipse.org/eclipselink/xsds/persistence/orm http://www.eclipse.org/eclipselink/xsds/eclipselink_orm_2_5.xsd">
+    <named-query name="Employee.findAll">
+        <query>select e from EmployeeNO e</query>
+    </named-query>
+	<entity class="entity.EmployeeNO">
+		<table name="EMPLOYEES"/>
+		<attributes>
+			<id name="employee_Id" attribute-type="long">
+				<column name="EMPLOYEE_ID"/>
+			</id>
+			<basic name="commissionPct" attribute-type="java.math.BigDecimal">
+				<column name="COMMISSION_PCT"/>
+			</basic>
+			<basic name="departmentId" attribute-type="java.math.BigDecimal">
+				<column name="DEPARTMENT_ID"/>
+			</basic>
+			<basic name="email" attribute-type="String">
+			</basic>
+			<basic name="firstName" attribute-type="String">
+				<column name="FIRST_NAME"/>
+			</basic> 
+			<basic name="hireDate" attribute-type="java.util.Date">
+				<column name="HIRE_DATE"/>
+				<temporal>DATE</temporal>
+			</basic>
+			<basic name="jobId" attribute-type="String">
+				<column name="JOB_ID"/>
+			</basic>
+			<basic name="lastName" attribute-type="String">
+				<column name="LAST_NAME"/>
+			</basic>
+			<basic name="phoneNumber" attribute-type="String">
+				<column name="PHONE_NUMBER"/>
+			</basic>
+			<basic name="salary" attribute-type="java.math.BigDecimal">
+			</basic>
+			<basic name="managerId" attribute-type="java.math.BigDecimal">
+				<column name="MANAGER_ID"/>
+			</basic>
+			<!-- <many-to-one name="employee" target-entity="entity.Employee">
+				<join-column name="MANAGER_ID"/>
+			</many-to-one>
+			<one-to-many name="employees" mapped-by="employee" target-entity="entity.Employee" attribute-type="java.util.List">
+			</one-to-many> -->
+		</attributes>
+	</entity>
+	<!-- <entity class="entity.CurrentNO" access="VIRTUAL">
+		<table name="CURRENTNO">
+		</table>
+		<attributes>
+		<id name="accId" attribute-type="int">
+				<column name="ACCID"/>
+			</id>
+			<basic name="od_Limit" attribute-type="java.lang.Double">
+			</basic>
+		</attributes>
+	</entity> -->
+	<!-- <entity class="entity.AccountNO" access="VIRTUAL">
+		<attributes>
+		<id name="accId" attribute-type="int">
+				<column name="ACCID"/>
+			</id>
+			<basic name="accId" attribute-type="java.lang.Integer">
+			</basic>
+			<basic name="h_Name" attribute-type="java.lang.String">
+			</basic>
+			<basic name="balance" attribute-type="java.lang.Double">
+			</basic>
+		</attributes> 
+	</entity>-->
+	
+	
+</entity-mappings>
