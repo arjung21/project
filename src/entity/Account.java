@@ -7,6 +7,7 @@ import javax.persistence.*;
  * Entity implementation class for Entity: Account
  *
  */
+// This is  my second commit.
 @Entity
 @Table (name = "ACCOUNT") 
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE)
